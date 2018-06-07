@@ -1,0 +1,23 @@
+<h1>MongoDB App</h1>
+
+<form action="/people" method="post">
+  <input type="text" name="name" placeholder="Type your name">
+  <input type="text" name="age" placeholder="Type your age">
+  <button>Submit</button>
+</form>
+
+<ul>
+  {{#each items}}
+    <li>
+      <h3>Name: {{ name }}</h3>
+      <p>Age: {{ age }}</p>
+    </li>
+  {{/each}}
+</ul>
+
+
+{{!-- <ul>
+  {{#each fruits}}
+    <li>{{ name }} and it's color is {{ color }} and {{ blah }}</li>
+  {{/each}}
+</ul> --}}
